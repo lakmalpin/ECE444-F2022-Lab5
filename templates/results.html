@@ -12,7 +12,8 @@
 
 <body>
     {% from "_formhelpers.html" import render_field %}
-    <form method="post">
+    <h3>Search for courses</h3>
+    <form class="common-page-form" method="post">
       <dl>
         {{ render_field(form.select) }}
         <p>
@@ -21,11 +22,13 @@
         <p>
         {{ render_field(form.search) }}
       </p></dl>
-      <p>{{render_field(form.top)}} <input type="submit" value="Search">
+      <p>{{render_field(form.top)}} <input class="btn btn-primary common-page-submit-btn" type="submit" value="Search">
       </p></form>
-    
+      <h3>Search Results</h3>
+<div id="results-page-table-container">   
 {% for table in tables %}
             {{ table|safe }}
 {% endfor %}
+</div>
 </body>
 </html>
