@@ -33,11 +33,20 @@ class CourseSearchForm(Form):
         ('25','25'),
         ('50','50')
     ]
+
+    types = [
+        ('Course Name/Code','Course Name/Code'),
+        ('Minor/Certificate','Minor/Certificate'),
+        ('Career Path','Career Path'),
+        ('Central Theme','Central Theme')
+    ]
+
     select = SelectField('Course Year:', choices=year_choices)
     top = SelectField('',choices=top)
     divisions = SelectField('Division:', choices=divisions)
     departments = SelectField('Department:', choices=departments)
     campuses = SelectField('Campus:', choices=campus)
+    types = SelectField('Search Type:', choices=types)
     search = StringField('Search Terms:')
 
 def create_app():

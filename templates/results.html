@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-<html lang="en">
 <link rel="stylesheet" href="/static/styles/common.css">
 <link rel="stylesheet" href="/static/styles/results.css">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Education Pathways</title>
@@ -17,18 +17,114 @@
       <dl>
         {{ render_field(form.select) }}
         <p>
-          Restrict by one of: {{ render_field(form.divisions) }} or {{ render_field(form.departments) }} or {{ render_field(form.campuses) }}
+            Restrict by one of: {{ render_field(form.divisions) }} or {{ render_field(form.departments) }} or {{ render_field(form.campuses) }} or {{ render_field(form.types) }} 
         </p> 
         <p>
         {{ render_field(form.search) }}
       </p></dl>
       <p>{{render_field(form.top)}} <input class="btn btn-primary common-page-submit-btn" type="submit" value="Search">
-      </p></form>
-      <h3>Search Results</h3>
-<div id="results-page-table-container">   
-{% for table in tables %}
-            {{ table|safe }}
-{% endfor %}
-</div>
+    </p></form>
+    <h3>Search Results for: machine learning</h3>
+  <div id="results-page-table-container">
+    <!--{% for table in tables %}
+                {{ table|safe }}
+    {% endfor %} -->
+    <table>
+      <thead>
+        <tr style="text-align: right;">
+          <th>Central theme</th>
+          <th>Course</th>
+          <th>Name</th>
+          <th>Division</th>
+          <th>Course Description</th>
+          <th>Department</th>
+          <th>Course Level</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Machine Learning</td>
+          <td><a href="/course/ISP010H5">APS360H1</a></td>
+          <td>Applied Fundamentals &amp; Machine Learning</td>
+          <td>Faculty of Applied Science &amp; Engineering</td>
+          <td>And then there were none</td>
+          <td>Faculty of Applied Science &amp; Engineering</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Machine Learning</td>
+          <td><a href="/course/PMU085H1">ECE345H1</a></td>
+          <td>Algorithms &amp; Data Structures</td>
+          <td>Faculty of Applied Science &amp; Engineering</td>
+          <td>And then there were none</td>
+          <td>Faculty of Applied Science &amp; Engineering</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Machine Learning</td>
+          <td><a href="/course/PMU095H1">ECE358H1</a></td>
+          <td>Foundations of Computing</td>
+          <td>Faculty of Applied Science &amp; Engineering</td>
+          <td>And then there were none</td>
+          <td>Faculty of Applied Science &amp; Engineering</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Machine Learning</td>
+          <td><a href="/course/PMU098H1">CSC263H1</a></td>
+          <td>Data Structures &amp; Analysis</td>
+          <td>Arts and Science</td>
+          <td>And then there were none</td>
+          <td>Arts and Science</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Machine Learning</td>
+          <td><a href="/course/APS062H1">MIE335H1</a></td>
+          <td> Algorithms &amp; Numerical Methods</td>
+          <td>Faculty of Applied Science &amp; Engineering</td>
+          <td>And then there were none</td>
+          <td>Faculty of Applied Science &amp; Engineering</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Machine Learning</td>
+          <td><a href="/course/APS064H1">ECE421H1</a></td>
+          <td>Introduction to Machine Learning</td>
+          <td>Faculty of Applied Science &amp; Engineering</td>
+          <td>And then there were none</td>
+          <td>Faculty of Applied Science &amp; Engineering</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>Machine Learning</td>
+          <td><a href="/course/APS064H1">CSC311H1</a></td>
+          <td>Introduction to Machine Learning (formerly CSC 411)</td>
+          <td>Arts and Science</td>
+          <td>And then there were none</td>
+          <td>Arts and Science</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Machine Learning</td>
+          <td><a href="/course/APS064H1">ROB313H1</a></td>
+          <td>Introduction to Learning From Data</td>
+          <td>Faculty of Applied Science &amp; Engineering</td>
+          <td>And then there were none</td>
+          <td>Faculty of Applied Science &amp; Engineering</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Machine Learning</td>
+          <td><a href="/course/APS064H1">MIE424H1</a></td>
+          <td>Optimization in Machine Learning</td>
+          <td>Faculty of Applied Science &amp; Engineering</td>
+          <td>And then there were none</td>
+          <td>Faculty of Applied Science &amp; Engineering</td>
+          <td>4</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
 </html>
