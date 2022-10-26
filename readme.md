@@ -18,3 +18,10 @@ Results Page - Form
 Results Page - Results Table
 
 ![image](images/activity4.JPG)
+
+# Activity 6
+
+User Story 3.2.1 - As a student, I want to see which courses can be useful in the pursuit of various career paths available post-graduation, so I can tailor my searches to these career goals 
+
+![image](images/activity6-US-3.2.1.JPG)
+![image](images/activity6-US-3.2.1-2.JPG)
