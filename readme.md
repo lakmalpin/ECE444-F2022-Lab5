@@ -21,6 +21,11 @@ Results Page - Results Table
 
 # Activity 6
 
+User Story 3.1.1 - As a student, I want to learn if a course is required for a specific minor or certificate that I am interested in so that I can better prioritize these courses for the successful completion of my academic minor or certificate goals. 
+
+![image](images/activity6-US-3.1.1.JPG)
+![image](images/activity6-US_3.1.1-2.JPG)
+
 User Story 3.2.1 - As a student, I want to see which courses can be useful in the pursuit of various career paths available post-graduation, so I can tailor my searches to these career goals 
 
 ![image](images/activity6-US-3.2.1.JPG)
