@@ -30,3 +30,8 @@ User Story 3.2.1 - As a student, I want to see which courses can be useful in th
 
 ![image](images/activity6-US-3.2.1.JPG)
 ![image](images/activity6-US-3.2.1-2.JPG)
+
+User Story 3.2.2 - As a student, being able to see courses grouped into central themes like machine learning, data science, system-on-chip (SOC) design, etc. would greatly help in planning out future enrollments suited to my needs 
+
+![image](images/activity6-US-3.2.2.JPG)
+![image](images/activity6-US-3.2.2-2.JPG)
